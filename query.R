@@ -9,4 +9,4 @@ hadley_index = function(x, pc = F){
 
 if('hadley_followers.csv' %in% list.files()){
   hadley_followers = read.csv('hadley_followers.csv', stringsAsFactors=F)
-} else hadley_followers = read.csv('https://github.com/geotheory/hadley_index/hadley_followers.csv', stringsAsFactors=F)
+} else hadley_followers = read.csv('https://raw.githubusercontent.com/geotheory/hadley_index/master/hadley_followers.csv', stringsAsFactors=F)
