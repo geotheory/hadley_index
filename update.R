@@ -2,7 +2,7 @@ require(rtweet)
 require(digest)
 require(tidyverse)
 
-hadley_follower_ids = get_followers('hadleywickham', n=75000, retryonratelimit = T)
+hadley_follower_ids = get_followers('hadleywickham', n=200000, retryonratelimit = T)
 
 hadley_followers = lookup_users(as_userid(hadley_follower_ids$user_id))
 
